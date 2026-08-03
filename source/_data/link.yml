@@ -1,0 +1,17 @@
+# 友链数据
+# 格式：name（名称）、link（链接）、avatar（头像）、descr（一句话描述）
+- class_name: 安全博客
+  class_desc: 常读的安全研究博客
+  link_list:
+    - name: WillSafe
+      link: https://willsafe.github.io/
+      avatar: /img/friend_404.gif
+      descr: 安全研究笔记
+
+- class_name: 友情链接
+  class_desc: 欢迎交换友链，在关于页找到我的联系方式
+  link_list:
+    - name: 你的博客
+      link: https://example.com/
+      avatar: /img/friend_404.gif
+      descr: 示例占位，改成真实友链

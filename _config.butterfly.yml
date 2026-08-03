@@ -1,0 +1,339 @@
+# --------------------------------------
+# Butterfly 主题定制（覆盖默认值）
+# 完整配置项参考: node_modules/hexo-theme-butterfly/_config.yml
+# 文档: https://butterfly.js.org/
+# --------------------------------------
+
+# 导航栏
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  友链: /links/ || fas fa-link
+  关于: /about/ || fas fa-user-secret
+
+# 代码块
+code_blocks:
+  theme: darker
+  macStyle: true
+  height_limit: 400
+  word_wrap: false
+  copy: true
+  language: true
+  shrink: false
+  fullpage: true
+
+# 社交链接（TODO: 改成你自己的）
+social:
+  fab fa-github: https://github.com/Masterjun1 || GitHub || '#24292e'
+  fas fa-envelope: mailto:Masterjun1@users.noreply.github.com || Email || '#4a7dbe'
+
+# 头像（把自己的头像放到 source/img/avatar.jpg 后改这里）
+avatar:
+  img: /img/butterfly-icon.png
+  effect: true
+
+# 顶部横幅图（可随时替换为本地 /img/xxx.jpg）
+default_top_img: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80
+index_img: https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1920&q=80
+archive_img: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80
+tag_img: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80
+category_img: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80
+footer_img: false
+
+# 文章默认封面（未设置 cover 时随机显示）
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80
+    - https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80
+    - https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80
+
+# 404 页面
+error_404:
+  enable: true
+  subtitle: 404 - 页面好像被 302 带走了
+  background: https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1920&q=80
+
+# 首页打字机副标题
+subtitle:
+  enable: true
+  effect: true
+  typed_option:
+  source: false
+  sub:
+    - 未知攻，焉知防
+    - Talk is cheap. Show me the shell.
+    - 渗透测试 | 内网攻防 | CTF | 免杀 | 代码审计
+    - 仅供学习研究，请勿用于非法用途
+
+# 首页文章布局 3: 封面左右交错
+index_layout: 3
+
+index_post_content:
+  method: 3
+  length: 200
+
+# 文章目录
+toc:
+  post: true
+  page: false
+  number: true
+  expand: true
+  style_simple: true
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
+
+# 文章过期提醒
+noticeOutdate:
+  enable: true
+  style: flat
+  limit_day: 180
+  position: top
+  message_prev: 本文最后更新于
+  message_next: 天前，内容可能已过时，请注意甄别。
+
+# 相关文章
+related_post:
+  enable: true
+  limit: 6
+  date_type: created
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: false
+  custom_text: 仅供安全研究与学习交流
+
+# 侧边栏
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 专注渗透测试 / 红队攻防 / 安全研究
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/Masterjun1
+  card_announcement:
+    enable: true
+    content: ⚠️ 本博客内容仅供授权安全测试与学习研究，请勿用于非法用途
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 40
+    color: true
+    orderby: random
+    order: 1
+  card_archives:
+    enable: true
+    type: monthly
+    format: YYYY年MM月
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    runtime_date: 7/30/2026 00:00:00
+
+# 阅读模式
+readmode: true
+
+# 暗色模式（安全博客默认暗色，带切换按钮）
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+# 默认暗色显示
+display_mode: dark
+
+rightside_scroll_percent: true
+rightside_config_animation: true
+
+anchor:
+  auto_update: true
+  click_to_scroll: true
+
+# 字数统计
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# 不蒜子访客统计
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 本地搜索
+search:
+  use: local_search
+  placeholder: 搜索笔记 / Payload / CVE ...
+  local_search:
+    preload: true
+    top_n_per_article: 1
+    unescape: false
+    pagination:
+      enable: true
+      hitsPerPage: 8
+
+# 评论系统（推荐 Giscus，配置方法见博客《开始使用》文章）
+comments:
+  use:
+  text: true
+  lazyload: true
+  count: false
+  card_post_count: false
+
+giscus:
+  repo:
+  repo_id:
+  category_id:
+  light_theme: light
+  dark_theme: dark
+
+# 黑客绿主题配色
+theme_color:
+  enable: true
+  main: "#00c853"
+  paginator: "#00c853"
+  button_hover: "#ff7242"
+  text_selection: "#00c853"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#00c853"
+  code_foreground: "#f47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c853"
+  blockquote_padding_color: "#00c853"
+  blockquote_background_color: "#00c853"
+  scrollbar_color: "#00c853"
+
+category_ui: index
+
+rounded_corners_ui: true
+
+# 加载动画
+preloader:
+  enable: true
+  source: 1
+
+# 页面过渡
+enter_transitions: true
+
+# 打字粒子特效（输入时触发）
+activate_power_mode:
+  enable: true
+  colorful: true
+  shake: false
+  mobile: false
+
+# 背景蛛网特效
+canvas_nest:
+  enable: true
+  color: '0,200,83'
+  opacity: 0.7
+  zIndex: -1
+  count: 66
+  mobile: false
+
+# 鼠标点击文字特效
+clickShowText:
+  enable: true
+  text:
+    - PWNED
+    - root
+    - getshell
+    - 0day
+    - flag{*}
+  fontSize: 15px
+  random: true
+  mobile: false
+
+# 图片灯箱
+lightbox: fancybox
+
+# 图片懒加载
+lazyload:
+  enable: true
+  field: site
+  blur: true
+
+# Pjax 无刷新跳转
+pjax:
+  enable: true
+
+# 悬停预加载，打开更快
+instantpage: true
+
+# Mermaid 流程图（画攻击链用）
+mermaid:
+  enable: true
+  code_write: true
+  theme:
+    light: default
+    dark: dark
+  open_in_new_tab: true
+  zoom_pan: true
+
+# 文章系列专题
+series:
+  enable: true
+  orderBy: 'date'
+  order: 1
+  number: true
+
+# Snackbar 提示
+snackbar:
+  enable: true
+  position: bottom-left
+  bg_light: '#00c853'
+  bg_dark: '#1f1f1f'
+
+# 结构化数据（SEO）
+structured_data:
+  enable: true
+
+# 中英混排优化在 Butterfly 5 已内置
+
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  version: true
